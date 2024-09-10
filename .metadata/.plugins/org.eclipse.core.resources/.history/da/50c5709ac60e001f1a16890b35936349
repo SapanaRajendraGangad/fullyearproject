@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="bill" name="frm" method="get">
+<h1>Opd bill</h1>
+<label>Doctor Fee</label>
+<input type=text name="doctor Fee" placeholder="Enter the Doctor Fees" value="">
+<label>Medicine Fee</label>
+<input type=text name="doctor Fee" placeholder="Enter the Medical Fees" value="">
+</form>
+</body>
+</html>

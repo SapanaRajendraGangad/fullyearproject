@@ -1,0 +1,14 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.klj{
+	background-image: url("images/medicine.jpg");
+}
+form{
+	height:520px;
+	width:400px;
+	background-color: red;
+	margin:90px;
+}

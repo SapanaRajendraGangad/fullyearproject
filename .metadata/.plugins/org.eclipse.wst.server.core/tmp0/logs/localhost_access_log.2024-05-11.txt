@@ -1,0 +1,7 @@
+127.0.0.1 - - [11/May/2024:08:59:16 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/May/2024:08:59:18 +0530] "GET /HospitalManagementSystem/admindashboard.jsp HTTP/1.1" 200 5714
+0:0:0:0:0:0:0:1 - - [11/May/2024:08:59:19 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/May/2024:09:00:11 +0530] "GET /HospitalManagementSystem/AddPatient.jsp HTTP/1.1" 200 7677
+0:0:0:0:0:0:0:1 - - [11/May/2024:09:00:11 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/May/2024:09:00:45 +0530] "GET /HospitalManagementSystem/admindashboard.jsp HTTP/1.1" 200 5662
+0:0:0:0:0:0:0:1 - - [11/May/2024:09:00:45 +0530] "GET /favicon.ico HTTP/1.1" 404 762

@@ -1,0 +1,10 @@
+127.0.0.1 - - [17/Apr/2024:22:45:53 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:45:56 +0530] "GET /OnlinePetrolPumpManagmentSystem/addMachine.jsp HTTP/1.1" 200 3061
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:45:56 +0530] "GET /OnlinePetrolPumpManagmentSystem/CSS/adminStyle.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:45:56 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:46:07 +0530] "GET /OnlinePetrolPumpManagmentSystem/viewEmplyee.jsp HTTP/1.1" 200 2925
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:46:10 +0530] "GET /OnlinePetrolPumpManagmentSystem/Allocatemachine?eid=1&empName=Ram HTTP/1.1" 200 2294
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:46:10 +0530] "GET /OnlinePetrolPumpManagmentSystem/CSS/update.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:46:37 +0530] "POST /OnlinePetrolPumpManagmentSystem/allocatemachine HTTP/1.1" 200 40
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:48:39 +0530] "GET /OnlinePetrolPumpManagmentSystem/Allocatemachine?eid=3&empName=prasad HTTP/1.1" 200 2297
+0:0:0:0:0:0:0:1 - - [17/Apr/2024:22:49:01 +0530] "POST /OnlinePetrolPumpManagmentSystem/allocatemachine HTTP/1.1" 200 40

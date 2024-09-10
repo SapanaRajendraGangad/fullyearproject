@@ -1,0 +1,98 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="org.Hospital.admin.service.*,java.util.*,org.Hospital.admin.model.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.table{
+border: 2px solid ;
+background-color:lightnavy;
+width:100vh;
+margin-left: 80px;
+}
+.table th,
+.table td,
+.table tr{
+border:2px solid black;
+}
+</style>
+<script type='text/javascript'>
+    function searchByName(str){
+    	let xhttp=new XMLHttpRequest();
+    	xhttp.onreadystatechange=function(){
+    		 if(this.readyState==4 && this.status==200){
+    			 document.getElementById("d").innerHTML=this.responseText;
+    		 }
+    	};
+    	xhttp.open("GET","searchPatient.jsp?n="+str,true)
+    	xhttp.send();
+    }
+ </script>
+</head>
+<body>
+
+<%@include file="admindashboard.jsp"%>
+<div class="col-md-8 col-sm-12 py-3">
+<br><br><br><br>
+<h1>Patient details</h1>
+<center><input type='text' name='name' value='' style='width:90%;height:50px;margin-left:15vh;' onkeyup="searchByName(this.value)"/></center>
+<br><br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">sr.no</th>
+      <th scope="col">patient name</th>
+      <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Age</th>
+            <th scope="col">gender</th>
+            <th scope="col">Date</th>
+            <th scope="col">Type</th>
+            <th scope="col">Category</th>
+           <th scope="col">Doctor name</th>
+             <th scope="col">Add Medicine</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Update</th>
+    </tr>
+  </thead>
+ <tbody>
+ <%
+PatientService pService=new PatientServiceImpl();
+ List<Object[]> list=pService.ispatientdctor();
+ int count=0;
+ for(Object obj[]:list){
+ 
+ %>
+ <tr>
+ <td><%=++count%></td>
+ <td><%=obj[0]%></td>
+   <td><%=obj[1] %></td>
+  <td><%=obj[2]%></td>
+  <td><%=obj[3]%></td>
+  <td><%=obj[4]%></td>
+  <td><%=obj[5]%></td>
+    <td><%=obj[6] %></td>
+      <td><%=obj[7]%></td>
+      <td><%=obj[8]%></td>
+      
+	<td><a href='AllocateMedicine?pid=<%=obj[9] %>&did=<%= obj[10]%>'>Add Medicine</td>
+  <td><a href='deletepatient?pid=<%=obj[9] %>'>Delete</td>
+  <td><a href='updatepatient?pid=<%=obj[9]%>&pname=<%=obj[0]%>&address=<%=obj[1] %>
+  &contact=<%=obj[2]%>&age=<%=obj[3] %>&gender=<%=obj[4] %>
+  &pdate=<%=obj[5]%>&ptype=<%=obj[6] %>&category=<%=obj[7]%>'>Update</td>
+ 
+</tr>
+ <%
+ }
+ %>
+ </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

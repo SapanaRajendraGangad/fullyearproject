@@ -1,0 +1,34 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+form{
+height:40vh;
+width:80vh;
+margin:17vh 70vh;
+background-color: blue;
+padding: 4vh;
+}
+.all{
+height:700px;
+width:100%;
+background-image: url("images/medicine.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+input{
+height:5vh;
+width:60vh;
+}
+input[type=submit]{
+height:5vh;
+width:20vh;
+border-radius: 6vh;
+background-color: black;
+color:white;
+}
+h2{
+color: white;
+}

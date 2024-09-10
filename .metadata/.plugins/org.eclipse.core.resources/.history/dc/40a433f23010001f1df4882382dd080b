@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+form{
+height:75vh;
+width:80vh;
+margin:10vh 50vh;
+background-color: maroon;
+padding: 4vh;
+
+}
+input{
+height:5vh;
+width:60vh;
+}
+button{
+height:5vh;
+width:20vh;
+border-radius: 3vh;
+background-color: pink;
+}
+h1{
+color: white;
+}
+</style>
+</head>
+<body>
+ <%@include file="admindashboard.jsp"%>
+ <div class="col">
+<form action="adddoctor" name="frm" method="post">
+<h1>Add Doctor</h1>
+<label style="color:white;">Doctor Name:</label><br>
+<input type="text" name="dname" placeholder="Enter the name of doctor" value=""/><br><br>
+<label style="color:white;">Doctor Contact:</label><br>
+<input type="text" name="contact" placeholder="Enter thr contact of doctor"/><br><br>
+<label style="color:white;">Doctor Email:</label><br>
+<input type="text" name="email" placeholder="Enter thr email of doctor"/><br><br>
+<label style="color:white;">Doctor Category:</label><br>
+<input type="text" name="category" placeholder="Enter the category of doctor" value=""/><br><br>
+<button value="add doctor" >Add Doctor</button>
+</form>
+</div>
+</div>
+</div>
+ </div>
+</body>
+</html>

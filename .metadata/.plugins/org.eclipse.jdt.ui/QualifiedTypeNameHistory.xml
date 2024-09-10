@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.petrolpumpsystem.model.MachineModel"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.MachineService"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.MachineServiceImpl"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.repository.FuelTypeRepo"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.repository.FuelTypeRepoImpl"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.controller.FuelTypeController"/>
+    <fullyQualifiedTypeName name="org.petrolpumpsystem.model.EmployeeModel"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.config.DBConfig"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.EmpServise"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.EmpServiceImpl"/>
+    <fullyQualifiedTypeName name="org.petrolpumpsystem.model.FuelTypeModel"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.FuelType"/>
+    <fullyQualifiedTypeName name="org.petrolpump.admin.service.FuelTypeImpl"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.adminModel"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.AdminService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.repository.PatientRepo"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.repository.PatientRepoImpl"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.PatientServiceImpl"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.PatientService"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.PatientModel"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.DoctorService"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.DoctorServiceImpl"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.config.DBConfig"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.service.MedicineServies"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.MedicineModel"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.doctormodel"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.RecepModel"/>
+    <fullyQualifiedTypeName name="org.Hospital.admin.model.BillModel"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+</qualifiedTypeNameHistroy>

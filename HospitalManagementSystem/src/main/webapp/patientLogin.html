@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+form{
+width:60vh;
+height:40vh;
+background-color: blue;
+margin-left:30vh;
+}
+.box{
+width:50vh;
+height:5vh;
+margin-left:5vh;
+}
+button{
+margin-left: 20vh;
+padding:2vh;
+width:20vh;
+}
+.my{
+height:25vh;
+}
+.head{
+height:12vh;
+width:100%;
+background-color: blue;
+}
+.head h1{
+padding-left:70vh;
+padding-top:3vh;
+}
+form h1{
+margin-left: 4vh;
+}
+.allpage{
+height:800px;
+width:100%;
+background-image: url("images/receplogin.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Hospital Management System</h1>
+</div>
+<div class="allpage">
+<div class="my"></div>
+<form name="frm" action="PatientLogin" method="POST">
+<h1>Patient login form</h1>
+<br>
+<label style="color:white;margin-left: 5vh;">User Name:</label><br>
+ <input type='email' name='name' placeholder='Enter the username' value='' class='box'/><br><br>
+ <label style="color:white;margin-left: 5vh;">Password:</label>
+<input type='password' name='pass' placeholder='Enter the password' value='' class='box'/><br><br> 
+<button  value="Login">Login</button>
+</form>
+</div>
+</body>
+</html>

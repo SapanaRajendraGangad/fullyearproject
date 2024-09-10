@@ -1,0 +1,127 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="org.Hospital.admin.service.*,java.util.*,org.Hospital.admin.model.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+form{
+height:75vh;
+width:120vh;
+margin:10vh 50vh;
+background-color: maroon;
+padding: 4vh;
+
+}
+input{
+height:5vh;
+width:60vh;
+}
+button{
+height:5vh;
+width:20vh;
+border-radius: 3vh;
+background-color: pink;
+}
+h1{
+color: white;
+}
+.table{
+border: 2px solid ;
+background-color:lightpink;
+width:100vh;
+margin-left:15vh;
+}
+h1{
+margin-left:15vh;
+}
+.table th,
+.table td,
+.table tr{
+border:2px solid black;
+}
+</style>
+ <script type='text/javascript'>
+    function searchByName(str){
+    	let xhttp=new XMLHttpRequest();
+    	xhttp.onreadystatechange=function(){
+    		 if(this.readyState==4 && this.status==200){
+    			 document.getElementById("d").innerHTML=this.responseText;
+    		 }
+    	};
+    	xhttp.open("GET","searchDoctor.jsp?n="+str,true)
+    	xhttp.send();
+    }
+ </script>
+</head>
+<body>
+ <%@include file="admindashboard.jsp"%>
+ <div class="col">
+<form action="adddoctor" name="frm" method="post">
+<h1>Add Doctor</h1>
+<label style="color:white;">Doctor Name:</label>
+<input type="text" name="dname" placeholder="Enter the name of doctor" value=""/><br>
+<label style="color:white;">Doctor Contact:</label>
+<input type="text" name="contact" placeholder="Enter thr contact of doctor"/><br><br>
+<label style="color:white;">Doctor Email:</label><br>
+<input type="text" name="email" placeholder="Enter thr email of doctor"/><br><br>
+<label style="color:white;">Doctor Category:</label><br>
+<input type="text" name="category" placeholder="Enter the category of doctor" value=""/><br><br>
+<button value="add doctor" >Add Doctor</button>
+</form>
+<div class="col-md-8 col-sm-12 py-3">
+<br><br><br><br>
+<h1>Doctor details</h1><br>
+<center><input type='text' name='name' value='' style='width:90%;height:50px;margin-left:15vh;' onkeyup="searchByName(this.value)"/></center>
+<br><br>
+<div id="d">
+ <table border='5' align='center' width='60%'>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">sr.no</th>
+      <th scope="col">Doctor name</th>
+            <th scope="col">Contact</th>
+              <th scope="col">Email</th>
+            <th scope="col">Category</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Update</th>
+    </tr>
+  </thead>
+ <tbody>
+ <%
+ DoctorService dService=new DoctorServiceImpl();
+ List<doctormodel> list=dService.isviewDoctor();
+ int count=0;
+ for(doctormodel dmodel:list){
+	
+ %>
+ <tr>
+ <td><%=++count%></td>
+ <td><%=dmodel.getName()%></td>
+  <td><%=dmodel.getContact() %></td>
+  <td><%=dmodel.getEmail() %></td>
+    <td><%=dmodel.getCategory() %></td>
+  <td><a href='deletedoctor?doctorid=<%=dmodel.getId() %>'>Delete</td>
+  <td><a href='updatedoctor?did=<%=dmodel.getId()%>&dname=<%=dmodel.getName()%>&contact=<%=dmodel.getContact()%>&email=<%=dmodel.getEmail() %>&category=<%=dmodel.getCategory()%>'>Update</td>
+ 
+</tr>
+ <%
+ }
+ %>
+ </tbody>
+</table>
+</div>
+</div>
+</div>
+ </div>
+</body>
+</html>

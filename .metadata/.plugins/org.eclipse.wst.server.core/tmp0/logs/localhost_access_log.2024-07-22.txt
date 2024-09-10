@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Jul/2024:09:10:53 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:56 +0530] "GET /HospitalManagementSystem/logindashboard.jsp HTTP/1.1" 200 5437
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/194915.png HTTP/1.1" 200 30714
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/tetoscope.png HTTP/1.1" 200 6205
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/ambulance.png HTTP/1.1" 200 8674
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/hos1.jpg HTTP/1.1" 200 20936
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/logo.jpg HTTP/1.1" 200 36861
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/vecteezy_healthcare-theme-3d-illustration-of-an-empty-emergency-room_26977435.jpg HTTP/1.1" 200 2705265
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/Contact-us.jpg HTTP/1.1" 200 98658
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/theator.jpg HTTP/1.1" 200 56757
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /HospitalManagementSystem/images/watch.png HTTP/1.1" 200 2865
+0:0:0:0:0:0:0:1 - - [22/Jul/2024:09:10:57 +0530] "GET /favicon.ico HTTP/1.1" 404 762
